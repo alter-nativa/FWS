@@ -8,18 +8,7 @@
 	<script src="js/aframe-environment-component.min.js"></script>
 	<script src="js/aframe-spe-particles-component.js"></script>
    	<script src="js/aframe-spritesheet-animation.js"></script>
-	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
- 
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
-    <script> window.onload = () => {
-		navigator.geolocation.getCurrentPosition((position) => {
-        document.querySelector('a-plane').setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
-      });
-     }
-    </script>	
+		
 	
 <style>
 .mainUI
@@ -360,7 +349,7 @@ AFRAME.registerComponent('start',
 	<a-entity id="burst2Sound" sound="src: #burst2; loop: false; poolSize: 4; volume: 0.025;"></a-entity>
 	<a-entity id="burst3Sound" sound="src: #burst3; loop: false; poolSize: 4; volume: 0.025;"></a-entity>
 												 
-	<a-plane position="0 0 0" rotation="-90 0 0" width="1.8" height="2.4"  material='color: black; opacity: 0.1;'></a-plane>
+	<a-plane position="0 0 0" rotation="-90 0 0" width="10.8" height="20.4"  material='color: white; opacity: 1;'></a-plane>
 	
 	        <a-entity position="0 0 -5" geometry="primitive: plane; width: auto; height: auto" material="color: #333"
                   text="color: yellow; align: center; value: [HAPPY BIRTHDAY\n10.06.2020]; ">
