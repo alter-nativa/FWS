@@ -340,7 +340,7 @@ AFRAME.registerComponent('start',
 
 
 <a-scene vr-mode-ui="enabled: false"
-	 environment="sky: color #000000; opacity: 0.9; fog: 0;  flatShading: false; groundTexture: walkernoise; groundColor: #000000; groundColor2: #00ff00; grid: none" start>
+	 environment="preset: starry; fog: 0;  flatShading: false; groundTexture: walkernoise; groundColor: #000000; groundColor2: #00ff00; grid: none" start>
 	  
 	<a-assets>
 		<img id="fireball" src="images/fireball.png"/>	
@@ -360,7 +360,9 @@ AFRAME.registerComponent('start',
 	<a-entity id="burst2Sound" sound="src: #burst2; loop: false; poolSize: 4; volume: 0.025;"></a-entity>
 	<a-entity id="burst3Sound" sound="src: #burst3; loop: false; poolSize: 4; volume: 0.025;"></a-entity>
 												 
-	<a-plane position="0 0 0" rotation="-90 0 0" width="1.8" height="2.4"  material='color: black; opacity: 0.1;'></a-plane>									 
+	<a-plane position="0 0 0" rotation="-90 0 0" width="1.8" height="2.4"  material='color: black; opacity: 0.1;'></a-plane>
+	
+	<a-text position="0 0 0" rotation="-90 0 0" value="HAPPY BIRTHDAY\n10.06.2020"  material='color: black; opacity: 0.1;'></a-text>
 												 
 	<!-- <a-camera gps-camera rotation-reader> </a-camera> -->								 
 	<a-entity id="camera" camera look-controls position="0 1.6 0" ></a-entity>												 
