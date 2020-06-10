@@ -351,10 +351,12 @@ AFRAME.registerComponent('start',
 												 
 	<a-plane position="0 0 0" rotation="-90 0 0" width="10.8" height="20.4"  material='color: white; opacity: 1;'></a-plane>
 	
-	        <a-entity position="0 2 -3"
-                  text="color: yellow; align: center; value: HAPPY BIRTHDAY\n10.06.2020; scale: 2 2 2; width: 15 ">
+	        <a-entity position="-7 2 -7" rotation="0 45 0"
+                  text="color: yellow; align: center; value: HAPPY BIRTHDAY; scale: 2 2 2; width: 20 ">
         </a-entity>
-
+	        <a-entity position="7 2 -7" rotation="0 -45 0"
+                  text="color: yellow; align: center; value: 10.06.2020; scale: 2 2 2; width: 15 ">
+        </a-entity>
 												 
 	<!-- <a-camera gps-camera rotation-reader> </a-camera> -->								 
 	<a-entity id="camera" camera look-controls position="0 1.6 0" ></a-entity>												 
